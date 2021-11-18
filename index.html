@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>PREGÚNTALE A JUANCITO.</title>
+    <meta name="description" content="Detalles importantes al momento de aplicar los diversos adhesivos, de acuerdo al material donde serán aplicados. Conoce sobre todas las marcas disponibles en el mercado">
+    <meta name="keywords" content="sikaflex, fill all, topex, concreto, neutro, multiuso">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logoJuanLuis2.png" alt="Logo de Juancito Siliconas">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="index.html">BIENVENIDO A MI SITIO WEB.😀😄😀😄</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>PRODUCTOS MÁS VENDIDOS.</h1>
+    </header>
+
+    <div id="boton"></div>
+
+    <section class="container-fluid my-4">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="img/sika1.png" class="d-block w-100" alt="Silicona sika 118">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/soudal1.jpg" class="d-block w-100" alt="Silicona soudal fix all">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/topex1.jpg" class="d-block w-100" alt="Silicona topex">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+        </div>
+    </section>
+
+    <!----------------------- ORDENAR PRODUCTOS POR CATEGORÍAS--------------------------->
+
+    <div class="container-fluid my-4">
+        <div class="container-fluid my-4">
+            <select id="miSeleccion" class="form-select" aria-label="Default select example">
+                <option value="pordefecto">ORDENAR LAS SILICONAS.</option>
+                <option value="menor">MENOR PRECIO DE VENTA.</option>
+                <option value="mayor">MAYOR PRECIO DE VENTAS.</option>
+                <option value="alfabetico">ORDEN ALFABÉTICO.</option>
+              </select>
+            <p></p>
+        </div>
+    </div>
+
+
+    <!------------------- MI TABLA DE PRODUCTOS AGREGADOS AL CARRITO--------------------------->
+
+    <div>
+        <h2 class="mx-4 my-4">TU CARRITO DE COMPRAS:
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">CÓDIGO DEL PRODUCTO.</th>
+                        <th scope="col">SILICONA.</th>
+                        <th scope="col">CANTIDAD.</th>
+                        <th scope="col">PRECIO UNITARIO.</th>
+                        <th scope="col">ELIMINAR.</th>
+                    </tr>
+                </thead>
+                <tbody id="listaDeProductos">
+        </h2>
+        </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h4 id="gastoTotal">TU Total en Soles Peruanos: $</h4>
+    </div>
+
+    <!----------------------INFORMACIÓN IMPORTANTE DE LAS SILICONAS-------------------------->
+
+    <aside>
+        <button class="btn btn-danger" id="muestraParrafo">Información Técnica.</button>
+        <button class="btn btn-danger" id="ocultaParrafo">Ocultar Información Técnica.</button>
+
+        <p id="parrafo" style="display: none">La silicona es un polímero inorgánico derivado del polisiloxano, está constituido por una serie de átomos de silicio y oxígeno alternados. Es inodoro e incoloro. La silicona es inerte y estable a altas temperaturas, lo que la hace útil en gran
+            variedad de aplicaciones industriales, como lubricantes, adhesivos, moldes.
+        </p>
+    </aside>
+
+    <!----------------------------- MIS PRODUCTOS PARA VENDER-------------------------------->
+
+    <div class="container-fluid my-4">
+        <ul class="row siliconasTop10 list-group list-group-horizontal">
+        </ul>
+    </div>
+
+    <header>
+        <h1>LISTADO DE CLIENTES FRECUENTES EN MI WEB SITE 😀.</h1>
+    </header>
+
+    <aside id="equipo">
+    </aside>
+
+
+
+    <footer id="empleados">
+        <button class="btn btn-danger" id="muestraOculta">PRESIONA AQUÍ PARA VER SALUDO..!!!!</button>
+        <section class="container-fñuid mx-5 my-4" id="juancito27">
+            <img src="img/pared9.jpg" alt="Juan Luis Saluda">
+        </section>
+
+    </footer>
+
+
+
+    <!--------------------------------MIS SCRIPTS CARGADOS------------------------------------>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+    <script src="productos.js"></script>
+
+</body>
+
+</html>

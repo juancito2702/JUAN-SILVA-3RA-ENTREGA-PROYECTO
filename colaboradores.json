@@ -1,0 +1,30 @@
+{
+    "usuarios": [{
+            "nombre": "Juan Silva Rios.",
+            "edad": 29,
+            "puesto": "Gerente General",
+            "foto": "👨🏻‍💼"
+        },
+        {
+            "nombre": "Luis Silva Rios",
+            "edad": 27,
+            "puesto": "Analista",
+            "foto": "👨🏼‍💼"
+        },
+
+        {
+            "nombre": "Joan Silva Rios",
+            "edad": 25,
+            "puesto": "contador",
+            "foto": "👨‍💼"
+        },
+
+        {
+            "nombre": "Pablo Silva Rios",
+            "edad": 23,
+            "puesto": "Administrador",
+            "foto": "👨‍🏫"
+        }
+
+    ]
+}
